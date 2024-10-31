@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swichEx1</title>
+</head>
+<body>
+  <h1>swichEx1</h1>
+  <script>
+    let num = prompt('숫자를 입력해주세요');
+    
+    /* switch (num % 2) { // 더하기 연산자를 제외한 연산자는  '숫자형 문자열'을 자동 형변환하여 연산 조건문에서 결과값은 연산이 되어 숫자로 된다.
+      case 0:
+        alert(`${num}은 짝수입니다.`);
+        break;
+      case 1:
+      alert(`${num}은 홀수입니다.`);
+      break;
+      default:
+        alert('숫자만 입력해주세요');
+        break;
+    } */
+
+    let msg = '';
+    switch (num % 2) {
+      case 0:
+        msg = '짝';
+        break;
+      case 1:
+        msg = '홀';
+        break;
+      default :
+        document.body.innerHTML += `<h2>숫자만 입력해 주세요</h2>`;
+    }
+
+    if(msg) document.body.innerHTML += `<h2>${num}은/는 ${msg}수입니다</h2>`;
+  </script>
+</body>
+</html>

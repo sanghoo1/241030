@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifEx4</title>
+</head>
+<body>
+  <script>
+    const month = prompt('좋아하는 달을 입력하세요');
+    if(month>=3 && month<=5){
+      alert('봄엔 딸기!');
+    } else if(month>=6 && month <=8){
+      alert('여름엔 수박');
+    } else if (month >=9 && month<=11){
+      alert('가을엔 복숭아!');
+    } else if (month == 12 || month>=1 && month<=2){
+      alert('겨울엔 귤!');
+    }else{
+      alert('1~12사이의 숫자만 넣어주세요');
+    }
+  </script>
+</body>
+</html>
